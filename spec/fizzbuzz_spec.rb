@@ -27,7 +27,20 @@ require 'fizzbuzz'
       it 'is NOT divisible by fifteen' do
         expect(is_divisible_by_fifteen?(1)).to be false
       end
-      
+
     end
+
+    context 'says' do
+        
+      it '"Fizz" when divisble by three' do
+        expect(fizzbuzz_says(3)).to eq "Fizz"
+      end
+
+
+
+
+
+    end
+
 
   end
