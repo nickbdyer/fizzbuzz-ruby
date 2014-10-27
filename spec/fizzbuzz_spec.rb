@@ -36,7 +36,9 @@ require 'fizzbuzz'
         expect(fizzbuzz_says(3)).to eq "Fizz"
       end
 
-
+      it '"Buzz" when divisible by five' do
+        expect(fizzbuzz_says(5)).to eq "Buzz"
+      end
 
 
 
