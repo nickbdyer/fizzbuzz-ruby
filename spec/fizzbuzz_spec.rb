@@ -44,6 +44,11 @@ require 'fizzbuzz'
         expect(fizzbuzz_says(15)).to eq "Fizzbuzz"
       end
 
+      it 'number when not divisible by three, five or fifteen' do
+        expect(fizzbuzz_says(7)).to eq 7
+      end
+
+
     end
 
 
