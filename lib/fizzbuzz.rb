@@ -15,10 +15,8 @@ def is_divisible_by?(number, divisor)
 end
 
 def fizzbuzz_says(number)
-  return `say Fizzbuzz` if is_divisible_by_fifteen?(number)
-  return `say Fizz` if is_divisible_by_three?(number)
-  return `say Buzz` if is_divisible_by_five?(number)
-  return `say #{number}`
+  return "Fizzbuzz" if is_divisible_by_fifteen?(number)
+  return "Fizz" if is_divisible_by_three?(number)
+  return "Buzz" if is_divisible_by_five?(number)
+  number
 end
-
-(1..100).map {|number| fizzbuzz_says(number)}
